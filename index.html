@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number System Converter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Number System Converter</h1>
+    <div>
+      <label for="number">Number:</label>
+      <input type="text" id="number" oninput="convert()">
+    </div>
+    <div>
+      <label for="from">From:</label>
+      <select id="from" onchange="convert()">
+        <option value="binary">Binary</option>
+        <option value="decimal" selected>Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+    </div>
+    <div>
+      <label for="to">To:</label>
+      <select id="to" onchange="convert()">
+        <option value="binary">Binary</option>
+        <option value="decimal" selected>Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+    </div>
+    <div>
+      <label for="result">Result:</label>
+      <input type="text" id="result" readonly>
+    </div>
+    <div class="credit">Crited with ❤️ by Swapneel Das</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
