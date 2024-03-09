@@ -1,18 +1,32 @@
+<!-- Creator info
+Name          : Swapneel Das
+Email         : swapneeldas.contact@gmail.com
+Instagram     : swapneel_das or swapneelalways
+Facebook ID   : swapneel.das.sajeeb
+Facebook Page : swapneeldas.page
+Twitter       : swapneel_das__
+Telegram      : iswapneel or swapneelalways
+Website       : sci-spnl.blogspot.com
+YouTube       : swapneelalways
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Number System Converter</title>
+  <!--CSS style adding-->
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Number System Converter</h1>
+    <!--Input Area-->
     <div>
       <label for="number">Number:</label>
       <input type="text" id="number" oninput="convert()">
     </div>
+    <!--From Type-->
     <div>
       <label for="from">From:</label>
       <select id="from" onchange="convert()">
@@ -21,6 +35,7 @@
         <option value="hexadecimal">Hexadecimal</option>
       </select>
     </div>
+    <!--To Type-->
     <div>
       <label for="to">To:</label>
       <select id="to" onchange="convert()">
@@ -29,13 +44,15 @@
         <option value="hexadecimal">Hexadecimal</option>
       </select>
     </div>
+    <!--Result Area-->
     <div>
       <label for="result">Result:</label>
       <input type="text" id="result" readonly>
     </div>
-    <div class="credit">Crited with ❤️ by Swapneel Das</div>
+    <!--Programmer Credit Adding-->
+    <div class="credit">Created with ❤️ by Swapneel Das</div>
   </div>
-
+<!--Js adding-->
   <script src="script.js"></script>
 </body>
 </html>
